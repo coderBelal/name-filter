@@ -1,0 +1,33 @@
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top: 20px;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+@media only screen and (max-width: 768px) {
+  table {
+    /* Switch to horizontal scrolling for narrow screens */
+    overflow-x: auto;
+    width: 100%;
+    overflow: hidden;
+    order: none;
+    border-collapse: collapse;
+  }
+
+  /* Adjust font size for better readability on phones */
+  td,
+  th {
+    font-size: 20px;
+  }
+}
