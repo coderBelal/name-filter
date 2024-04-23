@@ -8,7 +8,7 @@ const App = () => {
 
   const Search = (data) => {
     return data.filter((item) =>
-      keys.some((key) => item[key].toLowerCase().includes(query))
+      keys.some((key) => item[key].toLowerCase().toUpperCase();.includes(query))
     );
   };
   return (
